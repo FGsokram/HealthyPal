@@ -1,0 +1,460 @@
+
+/*HEADER*/
+
+
+header{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.imgLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+}
+.HealthyPalCap{
+    display: flex;
+    justify-content: center; 
+}
+.imgHealthyPalCap{
+    height: 140px;
+    width: 600px;   
+}
+.busqPerfil{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px;
+}
+.busqueda{
+    margin-right: 35px;
+}
+.perfil{
+    margin-right: 30px;
+}
+
+
+/*MENU*/
+
+
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.botonMenu{
+    width:350px ;
+    height: 60px;
+    border: 3px solid;
+    background-color:#B0C4DE ;
+    border-color:#99AFCC;
+    border-radius:4px;  
+}
+.enlaceMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+.enlaceMenu:hover{
+    background-color: #1baace;
+    color: white;
+    transition: 0.5s;   
+}
+
+
+/*BODY*/
+
+.container{
+    display: flex;
+}
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    background-color: #c9c8c8;
+    border-radius: 10px;
+}
+.alimentacion{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+   
+}
+.ejercicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    
+}
+input{
+    background-color: #939393;
+    border-radius: 5px;
+}
+input[type="button"]{
+    cursor: pointer;
+}
+.registro{
+    margin: 30px;
+    width: 50%;
+    margin-right: 130px;
+}
+input[name="registro"]{
+    height: 40px;
+}
+input[name="registro"]:hover{
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.verProgreso{
+    width: 50%;
+    margin-right:180px ;   
+}
+button{
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+input[name="progreso"]{
+   width: 175px;
+   height: 40px;
+   margin: 40px;
+}
+input[name="progreso"]:hover{
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.grafico {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-container {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ffffff;
+    display: flex;
+    overflow: hidden;
+    transform: rotate(180deg);
+    flex-direction:row-reverse;
+}
+
+.bar {
+    flex: 1;
+    background-color: #0040a7;
+    margin: 0 3px;
+    transition: height 0.5s ease;
+    position: relative;
+}
+.bar-label {
+    position: absolute;
+    bottom: -20px; 
+    transform: rotate(180deg); 
+    color: #000000;
+    font-size: 15px;
+    left: -15%;
+}
+.ganancia{
+    transform: rotate(270deg);
+    margin: -6%;
+}
+
+/*FOOTER*/
+
+
+footer{
+    background-color: #002454;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    color: white;
+    align-items: center;
+}
+.terminos{
+width: 30%;    
+margin-left: 5%;
+}
+.divTerminos{
+    margin: 7px;
+}
+.enlaceTerminos{
+    color: white;
+}
+.derechosAutor{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;
+    align-items: center;
+    margin-top: 5%;
+}
+.imgDerechosAutor{
+    margin: 1px;
+    width:15px ;
+    height: 15px;
+}
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    margin: 5px;
+}
+.imgContacto{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 914px) {
+    .imgHealthyPalCap {
+        height: 100%;
+        width: 100%;
+    }
+
+    .nomEmpresa {
+        width: 50%;
+    }
+
+    header {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .busqPerfil {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .busqueda {
+        width: 25%;
+    }
+
+    .imgBusqPerfil {
+        width: 100%;
+    }
+
+    .perfil {
+        width: 30%;
+    }
+
+    .imgIconoUsuario {
+        width: 100%;
+    }
+
+    .imgLogo {
+        width: 100%;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    .imgContacto {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    .terminos {
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 810px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "info"
+            "formulario"
+            "grafico";
+        justify-items: center; 
+    }
+    
+    .info {
+        grid-area: info; 
+    }
+
+    .formulario {
+        grid-area: formulario; 
+    }
+
+    .grafico {
+        grid-area: grafico; 
+    }
+    .formulario{
+        width: 130%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .imgLogo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .derechosAutor {
+        width: 31%;
+    }
+
+    .imgContacto {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .derechosAutor {
+        width: 203%;
+    }
+
+    .imgContacto {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .terminos {
+        width: 80%;
+    }
+
+    .enlaceMenu {
+        font-size: medium;
+    }
+
+    b {
+        font-size: large;
+
+    }
+
+    .enlaceEjercicio {
+        font-size: medium;
+    }
+
+    .enlaceRecetas {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .botonReceta {
+        width: 26%;
+
+    }
+
+    .botonEjercicio {
+        width: 26%;
+    }
+
+    .enlaceEjercicio {
+        font-size: small;
+    }
+
+    .enlaceRecetas {
+        font-size: small;
+    }
+    .terminos {
+        font-size: 10%;
+    }
+    .bar-label{
+        font-size: 10px;
+        left:-20%;
+    }
+    h2{
+        font-size: small;
+    }
+    input{
+        width: 80%;
+    }
+    .imgHealthyPalCap{
+        height: 50px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .botonMenu{
+        width: 20%;
+    height: 30px;
+    }
+    .enlaceMenu{
+        font-size: 12px;
+    }
+    .enlaceEjercicio{
+        font-size: 10px;
+    }
+    .enlaceRecetas{
+        font-size: 10px;
+    }
+    .rutinaEjercicioPrincipal{
+        margin-top: 1px;
+    }
+}
+@media screen and (max-width: 300px){
+    .imgContacto{
+        width: 15px;
+    height: 15px;
+    margin: 5px;
+    }
+    .enlaceMenu {
+        font-size: 8px;
+    }
+    .nomEmpresa {
+        width: 75%;
+    }
+    .formulario{
+        margin-right: 80px;
+    }
+    
+}

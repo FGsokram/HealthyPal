@@ -1,0 +1,135 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgHealthyPalCap {
+    width: 30%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+.cuerpo {
+    background-color: #B0C4DE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    height: 550px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.imgLogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.inicioSesion {
+    background-color: white;
+    width: 70%;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+}
+
+label {
+    margin: 10px;
+    width: 100%; 
+}
+
+input {
+    background-color: #D9D9D9;
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box; 
+}
+.botonInicioSesion{
+    width: 50%;
+}
+a{
+    color: blue;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #a0a0a0;
+    
+}
+button{
+    margin-left: inherit;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 914px) {
+
+    .cuerpo{
+        width: 50%;
+    }
+
+    .nomEmpresa {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .cuerpo{
+        width: 60%;
+    }
+
+   
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .cuerpo{
+        width: 60%;
+        height:550px ;
+    }
+    .imgLogo{
+        width: 100%;
+    height: 50px;
+
+    }
+    .logo{
+        margin: -50px;
+    }
+    body{
+        font-size: 10px;
+    }
+    input{
+        height: 30px;
+    }
+
+}
+
+
+

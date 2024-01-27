@@ -1,0 +1,406 @@
+
+/*HEADER*/
+
+
+header{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.imgLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+}
+.HealthyPalCap{
+    display: flex;
+    justify-content: center; 
+}
+.imgHealthyPalCap{
+    height: 140px;
+    width: 600px;   
+}
+.busqPerfil{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px;
+}
+.busqueda{
+    margin-right: 35px;
+}
+.perfil{
+    margin-right: 30px;
+}
+
+
+/*MENU*/
+
+
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.botonMenu{
+    width:350px ;
+    height: 60px;
+    border: 3px solid;
+    background-color:#B0C4DE ;
+    border-color:#99AFCC;
+    border-radius:4px;  
+}
+.enlaceMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+.enlaceMenu:hover{
+    background-color: #1baace;
+    color: white;
+    transition: 0.5s;   
+}
+
+
+/*BODY*/
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.letraTitulo{
+    background-color:#c9c8c8 ;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: x-large;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.imgEjercicio{
+    margin-right: 100px;
+}
+.img{
+    width:500px;
+    height: 400px;
+}
+
+.titulo{
+     background-color:#c9c8c8 ;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.video{
+    background-color: black;
+    color: white;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.valoracion{
+    margin-top: 20px;
+}
+.estrellas{
+    display: flex;
+    height: 60px;
+    margin: 10px;
+}
+
+.estrella {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(253, 245, 0);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.estrella::before,
+.estrella::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+   
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%);
+}
+
+.estrella::before {
+    transform: rotate(72deg);
+}
+
+.estrella::after {
+    transform: rotate(144deg);
+}
+
+
+/*FOOTER*/
+
+
+footer{
+    background-color: #002454;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    color: white;
+    align-items: center;
+}
+.terminos{
+width: 30%;    
+margin-left: 5%;
+}
+.divTerminos{
+    margin: 7px;
+}
+.enlaceTerminos{
+    color: white;
+}
+.derechosAutor{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;
+    align-items: center;
+    margin-top: 5%;
+}
+.imgDerechosAutor{
+    margin: 1px;
+    width:15px ;
+    height: 15px;
+}
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    margin: 5px;
+}
+.imgContacto{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 914px) {
+    .imgHealthyPalCap {
+        height: 100%;
+        width: 100%;
+    }
+
+    .nomEmpresa {
+        width: 50%;
+    }
+
+    header {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .busqPerfil {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .busqueda {
+        width: 25%;
+    }
+
+    .imgBusqPerfil {
+        width: 100%;
+    }
+
+    .perfil {
+        width: 30%;
+    }
+
+    .imgIconoUsuario {
+        width: 100%;
+    }
+
+    .imgLogo {
+        width: 100%;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    .imgContacto {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    .terminos {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width:855px){
+    .container{
+        justify-items: center; 
+        display: grid;
+        grid-template-columns: 1fr; 
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .imgLogo {
+        width: 100%;
+        height: auto;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .derechosAutor {
+        width: 31%;
+    }
+
+    .imgContacto {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .derechosAutor {
+        width: 203%;
+    }
+
+    .imgContacto {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .terminos {
+        width: 80%;
+    }
+
+    .enlaceMenu {
+        font-size: medium;
+    }
+
+    b {
+        font-size: large;
+
+    }
+
+    .enlaceEjercicio {
+        font-size: medium;
+    }
+
+    .enlaceRecetas {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .botonReceta {
+        width: 26%;
+
+    }
+
+    .botonEjercicio {
+        width: 26%;
+    }
+
+    .enlaceEjercicio {
+        font-size: small;
+    }
+
+    .enlaceRecetas {
+        font-size: small;
+    }
+    .terminos {
+        font-size: 10%;
+    }
+    
+
+}
+@media screen and (max-width: 400px) {
+    .botonMenu{
+        width: 20%;
+    height: 30px;
+    }
+    .enlaceMenu{
+        font-size: 12px;
+    }
+    .enlaceEjercicio{
+        font-size: 10px;
+    }
+    .enlaceRecetas{
+        font-size: 10px;
+    }
+    .rutinaEjercicioPrincipal{
+        margin-top: 1px;
+    }
+}
+@media screen and (max-width: 300px){
+    .imgContacto{
+        width: 15px;
+    height: 15px;
+    margin: 5px;
+    }
+    .enlaceMenu {
+        font-size: 8px;
+    }
+    .nomEmpresa {
+        width: 75%;
+    }
+    .imgHealthyPalCap{
+        height: auto;
+    margin-top: 60px;
+    }
+}
